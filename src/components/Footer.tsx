@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <div className="text-xl font-display font-medium">
-                <span className="text-shimmer">Cloud Engineer</span>
+                <span className="text-shimmer">Samuel Joseph</span>
               </div>
               <p className="text-muted-foreground mt-2 max-w-md">
                 Building resilient, secure and efficient cloud infrastructure for the modern web.
@@ -51,7 +51,7 @@ const Footer = () => {
           
           <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Cloud Engineer Portfolio. All rights reserved.
+              © {new Date().getFullYear()} Samuel Joseph. All rights reserved.
             </div>
             
             <div className="flex flex-wrap mt-4 md:mt-0 gap-4 text-sm">

@@ -57,7 +57,7 @@ const About = () => {
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-8'}`}>
             <h2 className="text-3xl sm:text-4xl font-display font-bold mb-4">About Me</h2>
             <p className="text-lg text-muted-foreground">
-              I'm a cloud engineer with expertise in designing and implementing scalable, secure and cost-effective cloud solutions. With a deep understanding of modern infrastructure technologies, I help organizations leverage the cloud to meet their business objectives.
+              I'm Samuel Joseph, a cloud engineer with over 5 years of experience in designing and implementing scalable, secure, and cost-effective cloud solutions. With deep expertise in AWS, Azure, and GCP, I help organizations leverage cloud technologies to achieve their business objectives and digital transformation goals.
             </p>
           </div>
         </div>

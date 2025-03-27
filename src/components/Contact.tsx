@@ -54,8 +54,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5 text-primary" />,
       title: 'Email',
-      detail: 'contact@cloudportfolio.com',
-      link: 'mailto:contact@cloudportfolio.com'
+      detail: 'samuel.joseph@example.com',
+      link: 'mailto:samuel.joseph@example.com'
     },
     {
       icon: <Phone className="w-5 h-5 text-primary" />,

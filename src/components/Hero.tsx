@@ -27,13 +27,13 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className={`space-y-4 transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0 translate-y-12'}`}>
             <div className="inline-block glass px-4 py-1.5 rounded-full text-sm font-medium animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              Cloud Infrastructure Expert
+              Samuel Joseph
             </div>
             <h1 className="font-display font-bold leading-tight text-balance">
-              Architecting <span className="text-shimmer">scalable and resilient</span> cloud solutions
+              <span className="text-shimmer">Cloud Infrastructure Engineer</span> specializing in scalable solutions
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Specializing in designing and implementing secure, high-performance cloud infrastructures for modern applications.
+              I design and implement secure, high-performance cloud infrastructures tailored for modern applications and enterprise needs.
             </p>
           </div>
           

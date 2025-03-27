@@ -66,7 +66,7 @@ const Navbar = () => {
             className="text-lg font-display font-medium cursor-pointer"
             onClick={() => scrollToSection('/')}
           >
-            <span className="text-shimmer">Cloud Engineer</span>
+            <span className="text-shimmer">Samuel Joseph</span>
           </div>
 
           {/* Desktop Menu */}
