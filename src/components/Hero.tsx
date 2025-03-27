@@ -30,10 +30,10 @@ const Hero = () => {
               Samuel Joseph
             </div>
             <h1 className="font-display font-bold leading-tight text-balance">
-              <span className="text-shimmer">Cloud Infrastructure Engineer</span> specializing in scalable solutions
+              <span className="text-shimmer">Cloud and DevOps Engineer</span> specializing in multi-cloud infrastructure
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              I design and implement secure, high-performance cloud infrastructures tailored for modern applications and enterprise needs.
+              Results-driven engineer with expertise in designing, automating, and optimizing mission-critical deployments across AWS, Azure, GCP, and Oracle Cloud.
             </p>
           </div>
           

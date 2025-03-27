@@ -10,8 +10,8 @@ const Footer = () => {
   }, []);
 
   const socialLinks = [
-    { name: 'GitHub', icon: <Github className="w-5 h-5" />, url: 'https://github.com' },
-    { name: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, url: 'https://linkedin.com' },
+    { name: 'GitHub', icon: <Github className="w-5 h-5" />, url: 'https://github.com/samuelcj' },
+    { name: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/samuel-joseph' },
     { name: 'Twitter', icon: <Twitter className="w-5 h-5" />, url: 'https://twitter.com' },
   ];
 

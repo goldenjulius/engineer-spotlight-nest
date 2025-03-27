@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import { Server, Cloud, Database, Shield, BarChart } from 'lucide-react';
+import { Server, Cloud, Database, Shield, BarChart, Code } from 'lucide-react';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,28 +25,33 @@ const About = () => {
   const services = [
     {
       icon: <Cloud className="h-6 w-6 text-primary" />,
-      title: 'Cloud Architecture',
-      description: 'Designing robust, scalable cloud infrastructures on AWS, Azure, and GCP.'
+      title: 'Multi-Cloud Architecture',
+      description: 'Designing secure and scalable infrastructures on AWS, Azure, GCP, and Oracle Cloud.'
+    },
+    {
+      icon: <Code className="h-6 w-6 text-primary" />,
+      title: 'DevOps & CI/CD Pipelines',
+      description: 'Building efficient pipelines with Jenkins, GitLab CI, GitHub Actions, and AWS CodePipeline.'
     },
     {
       icon: <Server className="h-6 w-6 text-primary" />,
       title: 'Infrastructure as Code',
-      description: 'Automating deployments with Terraform, CloudFormation, and Pulumi.'
+      description: 'Automating deployments using Terraform, Ansible, CloudFormation, and OpenTofu.'
     },
     {
       icon: <Database className="h-6 w-6 text-primary" />,
-      title: 'Database Solutions',
-      description: 'Implementing and optimizing cloud-native database services.'
+      title: 'Database Management',
+      description: 'Managing SQL and NoSQL databases including MySQL, PostgreSQL, MongoDB, and Oracle databases.'
     },
     {
       icon: <Shield className="h-6 w-6 text-primary" />,
       title: 'Security & Compliance',
-      description: 'Ensuring cloud environments meet industry security standards.'
+      description: 'Implementing IAM policies, VPNs, and security best practices across cloud environments.'
     },
     {
       icon: <BarChart className="h-6 w-6 text-primary" />,
-      title: 'Cost Optimization',
-      description: 'Strategically reducing cloud spend while maintaining performance.'
+      title: 'Monitoring & Optimization',
+      description: 'Setting up monitoring with Prometheus, Grafana, and CloudWatch to optimize performance and cost.'
     }
   ];
 
@@ -57,7 +62,7 @@ const About = () => {
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-8'}`}>
             <h2 className="text-3xl sm:text-4xl font-display font-bold mb-4">About Me</h2>
             <p className="text-lg text-muted-foreground">
-              I'm Samuel Joseph, a cloud engineer with over 5 years of experience in designing and implementing scalable, secure, and cost-effective cloud solutions. With deep expertise in AWS, Azure, and GCP, I help organizations leverage cloud technologies to achieve their business objectives and digital transformation goals.
+              I'm Samuel Joseph, a certified Cloud and DevOps Engineer with expertise in designing, automating, and optimizing mission-critical deployments across multi-cloud platforms. With experience at Goftech Support, Neulogic Solutions, and CloudPlexo, I've helped organizations enhance system reliability, streamline releases, and deliver innovative solutions aligned with business goals.
             </p>
           </div>
         </div>

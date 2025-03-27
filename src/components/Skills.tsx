@@ -28,16 +28,25 @@ const Skills = () => {
         { name: 'AWS', proficiency: 95 },
         { name: 'Microsoft Azure', proficiency: 90 },
         { name: 'Google Cloud Platform', proficiency: 85 },
-        { name: 'DigitalOcean', proficiency: 80 },
+        { name: 'Oracle Cloud', proficiency: 80 },
+      ]
+    },
+    {
+      name: 'DevOps & CI/CD',
+      skills: [
+        { name: 'Jenkins', proficiency: 90 },
+        { name: 'GitHub Actions', proficiency: 85 },
+        { name: 'GitLab CI', proficiency: 85 },
+        { name: 'AWS CodePipeline', proficiency: 80 },
       ]
     },
     {
       name: 'Infrastructure as Code',
       skills: [
         { name: 'Terraform', proficiency: 95 },
-        { name: 'CloudFormation', proficiency: 85 },
-        { name: 'Ansible', proficiency: 80 },
-        { name: 'Pulumi', proficiency: 75 },
+        { name: 'Ansible', proficiency: 85 },
+        { name: 'CloudFormation', proficiency: 80 },
+        { name: 'OpenTofu', proficiency: 75 },
       ]
     },
     {
@@ -46,16 +55,7 @@ const Skills = () => {
         { name: 'Docker', proficiency: 95 },
         { name: 'Kubernetes', proficiency: 90 },
         { name: 'Helm', proficiency: 85 },
-        { name: 'Service Mesh (Istio)', proficiency: 75 },
-      ]
-    },
-    {
-      name: 'DevOps Practices',
-      skills: [
-        { name: 'CI/CD Pipelines', proficiency: 90 },
-        { name: 'GitOps', proficiency: 85 },
-        { name: 'Infrastructure Monitoring', proficiency: 90 },
-        { name: 'Site Reliability Engineering', proficiency: 80 },
+        { name: 'ECS/EKS', proficiency: 85 },
       ]
     },
   ];
@@ -67,7 +67,7 @@ const Skills = () => {
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-8'}`}>
             <h2 className="text-3xl sm:text-4xl font-display font-bold mb-4">Technical Skills</h2>
             <p className="text-lg text-muted-foreground">
-              My expertise spans across multiple cloud platforms and infrastructure technologies, allowing me to design and implement comprehensive cloud solutions.
+              My expertise spans across multiple cloud platforms and infrastructure technologies, allowing me to design and implement comprehensive cloud and DevOps solutions.
             </p>
           </div>
         </div>

@@ -30,76 +30,76 @@ const ProjectDetail = () => {
 
   // This would typically come from an API or CMS
   const projects: Record<string, Project> = {
-    'serverless-api': {
-      id: 'serverless-api',
-      title: 'Serverless API Platform',
-      description: 'A high-performance serverless API built with AWS Lambda, API Gateway, and DynamoDB that handles millions of requests daily.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80',
-      technologies: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'Terraform', 'CloudWatch', 'Node.js'],
-      longDescription: 'This project involved designing a completely serverless API architecture for a high-traffic application. The system was built to automatically scale with traffic and maintain high availability across multiple AWS regions. It integrates with various AWS services for a complete serverless experience, from authentication to data storage and processing.',
+    'terraform-infrastructure': {
+      id: 'terraform-infrastructure',
+      title: 'Multi-Environment Infrastructure',
+      description: 'Implemented Terraform IaC for dynamic environments (Test, Dev, Staging, Prod), reducing provisioning time from days to minutes.',
+      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1600&q=80',
+      technologies: ['Terraform', 'AWS', 'Azure', 'CI/CD', 'Infrastructure as Code', 'OpenTofu'],
+      longDescription: 'Streamlined infrastructure management by implementing Terraform IaC for dynamic environments (Test, Dev, Staging, Prod), reducing provisioning and re-deployment time from days to minutes. This project involved converting AWS CDK-based infrastructure to Terraform, reducing code complexity by 30% and improving deployment consistency, resulting in a 20% decrease in operational incidents.',
       challenges: [
-        'Handling millions of daily API requests efficiently',
-        'Ensuring data consistency across regions',
-        'Implementing robust security measures',
-        'Optimizing cold start times for Lambda functions',
-        'Managing complex deployment processes'
+        'Managing multiple environments with consistent configurations',
+        'Converting existing AWS CDK code to Terraform',
+        'Ensuring secure handling of sensitive variables',
+        'Implementing proper state management',
+        'Integrating with existing CI/CD pipelines'
       ],
       solutions: [
-        'Implemented aggressive caching strategies at multiple levels',
-        'Designed a multi-region data synchronization system with DynamoDB Global Tables',
-        'Utilized AWS Cognito and Lambda authorizers for authentication and authorization',
-        'Optimized Lambda functions through code splitting and runtime selection',
-        'Created a comprehensive CI/CD pipeline with infrastructure as code'
+        'Created modular Terraform code with environment-specific configurations',
+        'Implemented Terragrunt for DRY infrastructure code',
+        'Used AWS Secrets Manager for sensitive data',
+        'Set up remote state with S3 and DynamoDB for locking',
+        'Integrated with GitHub Actions for automated deployment'
       ],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/samuelcj',
       liveUrl: '#',
     },
-    'kubernetes-cluster': {
-      id: 'kubernetes-cluster',
-      title: 'Multi-Region Kubernetes Cluster',
-      description: 'Designed and implemented a fault-tolerant Kubernetes infrastructure that spans multiple cloud regions for high availability.',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80',
-      technologies: ['Kubernetes', 'Helm', 'Istio', 'GCP', 'Terraform', 'Prometheus', 'Grafana'],
-      longDescription: 'This project focused on building a resilient, multi-region Kubernetes platform to support critical microservices. The architecture includes advanced networking, service mesh capabilities, comprehensive monitoring, and automated disaster recovery procedures. The infrastructure is fully defined as code and can be deployed to any supported cloud provider with minimal changes.',
+    'serverless-solution': {
+      id: 'serverless-solution',
+      title: 'Serverless Event Processing',
+      description: 'Integrated serverless solutions using AWS Lambda, API Gateway, and S3, achieving 99.99% availability for event-driven workflows.',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80',
+      technologies: ['AWS Lambda', 'API Gateway', 'S3', 'CloudWatch', 'DynamoDB', 'Serverless Framework'],
+      longDescription: 'Collaborated with the team to integrate serverless solutions using AWS Lambda, API Gateway, and S3, achieving 99.99% availability for event-driven workflows while reducing compute costs by 30% and improving scalability to handle high-volume traffic. The system processes incoming events, transforms data, and triggers additional workflows based on business rules.',
       challenges: [
-        'Ensuring high availability across geographic regions',
-        'Managing complex network topologies',
-        'Implementing zero-downtime deployments',
-        'Monitoring distributed systems effectively',
-        'Controlling cloud costs while maintaining performance'
+        'Designing for high availability and scalability',
+        'Managing cold start latency',
+        'Handling API request throttling',
+        'Implementing proper monitoring and alerting',
+        'Cost optimization for varying workloads'
       ],
       solutions: [
-        'Designed active-active cluster configuration across regions',
-        'Implemented Istio service mesh for advanced traffic control',
-        'Created custom Helm charts for standardized deployments',
-        'Built comprehensive monitoring dashboards with Prometheus and Grafana',
-        'Implemented cluster autoscaling and workload prioritization'
+        'Implemented multi-region deployment for high availability',
+        'Used provisioned concurrency for critical functions',
+        'Configured API Gateway throttling and caching',
+        'Set up comprehensive CloudWatch dashboards and alarms',
+        'Implemented automatic scaling based on usage patterns'
       ],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/samuelcj',
       liveUrl: '#',
     },
-    'data-pipeline': {
-      id: 'data-pipeline',
-      title: 'Real-time Data Pipeline',
-      description: 'Built an end-to-end data pipeline that processes terabytes of streaming data with minimal latency.',
-      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1600&q=80',
-      technologies: ['Kafka', 'Spark', 'AWS Kinesis', 'Airflow', 'S3', 'Redshift', 'Terraform'],
-      longDescription: 'This project involved designing and implementing a high-throughput data processing pipeline capable of ingesting, transforming, and analyzing terabytes of streaming data in near real-time. The architecture uses a combination of managed services and custom components to achieve both high performance and cost efficiency. The system includes data quality checks, monitoring, and alerting capabilities.',
+    'database-architecture': {
+      id: 'database-architecture',
+      title: 'High-Performance Database Architecture',
+      description: 'Administered database architecture for 50+ high-profile clients, improving query performance by 20% and ensuring data integrity.',
+      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1600&q=80',
+      technologies: ['PostgreSQL', 'MySQL', 'Oracle', 'MongoDB', 'Amazon RDS', 'Amazon Aurora', 'DynamoDB'],
+      longDescription: 'Administered database architecture for 50+ high-profile clients such as FBNQuest, United Capitals, and Norrenberger, improving query performance by 20%. The project involved designing efficient database schemas, implementing proper indexing strategies, and setting up replication for high availability and disaster recovery.',
       challenges: [
-        'Processing high-volume streaming data with minimal latency',
-        'Ensuring data integrity throughout the pipeline',
-        'Scaling compute resources dynamically based on workload',
-        'Implementing comprehensive data governance',
-        'Optimizing storage costs for historical data'
+        'Managing diverse database requirements across clients',
+        'Ensuring high availability and disaster recovery',
+        'Optimizing performance for complex queries',
+        'Implementing secure access control',
+        'Data migration with minimal downtime'
       ],
       solutions: [
-        'Designed a hybrid architecture using Kafka and Kinesis for data ingestion',
-        'Implemented stateful stream processing with exactly-once semantics',
-        'Created auto-scaling Spark clusters for data processing',
-        'Developed comprehensive data quality monitoring with automated alerts',
-        'Implemented intelligent data tiering and lifecycle policies'
+        'Created standardized database templates with client-specific customizations',
+        'Implemented multi-AZ deployments with read replicas',
+        'Performed query optimization and proper indexing',
+        'Set up fine-grained IAM permissions and encryption',
+        'Developed automated migration scripts with validation'
       ],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/samuelcj',
       liveUrl: '#',
     },
   };
